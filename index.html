@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Will You Be My Valentine?</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Will You Be My Valentine?</h1>
+    <button class="yes-btn" onclick="sayILoveYou()">YES</button>
+    <button class="no-btn" onclick="areYouSure()">NO</button>
+</div>
+
+<script>
+    function sayILoveYou() {
+        document.querySelector('.container').innerHTML = "<h1 style='font-size: 60px;'>I Love You</h1>";
+        document.body.style.backgroundImage = "url('/giphy.gif')";
+        document.body.classList.add("full");
+        document.querySelector('.yes-btn').style.display = 'none';
+        document.querySelector('.no-btn').style.display = 'none';
+    }
+
+    function areYouSure() {
+        let btn = document.querySelector('.no-btn');
+        btn.innerHTML="are you fkin sure ?";
+        let currentSize = window.getComputedStyle(btn).getPropertyValue('font-size');
+        let newSize = parseFloat(currentSize) * 2;
+        btn.style.fontSize = newSize + 'px';
+    }
+</script>
+</body>
+</html>

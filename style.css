@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffc0cb; /* lovely pinkish background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    text-align: center;
+}
+h1 {
+    font-size: 36px;
+    color: #fff;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+.yes-btn {
+    background-color: green;
+    color: #fff;
+}
+.no-btn {
+    background-color: red;
+    color: #fff;
+}
+.big-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+}
+.full{
+    background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
